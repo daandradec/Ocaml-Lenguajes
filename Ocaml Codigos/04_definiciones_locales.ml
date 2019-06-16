@@ -2,8 +2,8 @@
 (* Si queremos un identificador con un valor que solo exista en un contexto *)
 (* Por ejemplo si quisieramos calcular (3x4x5)x(3x4x5)+(3x4x5)x4*)
 
-let prod = 3*4+5 in prod*prod+prod*4;; (* con la palabra reservada in le decimos que asuma el valor de la exp1 en la exp de la derecha *)
-(* - : int = 357 *)
+let prod = 3*4*5 in prod*prod+prod*4;; (* con la palabra reservada in le decimos que asuma el valor de la exp1 en la exp de la derecha *)
+(* - : int = 3840 *)
 (* En su evaluación: el identificador1 es del tipo de la expr1 dentro de la expresión2, y el resultado sera del tipo de la expresión2 *)
 (* Por ultimo el identificador local desaparece *)
 
@@ -14,7 +14,7 @@ prod-1;;
 (* - : int = 30 *)
 
 let valor = (let x = 5*5 in x+2);;
-(* - : int = 27 *)
+(* val valor : int = 27 *)
 
 let x = "global";;
 (* val x : string = "global" *)

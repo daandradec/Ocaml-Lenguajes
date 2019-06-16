@@ -27,6 +27,7 @@ absoluto 5;;
 *)
 let average a b = (a +. b) /. 2.0;;
 (* val average : float -> float -> float = <fun> *)
+(* average 2.0 4.0;; *)
 
 (* f'(x) mediante la definición de la derivada en un punto *)
 let dx = 1e-10;;

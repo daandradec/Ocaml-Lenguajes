@@ -1,6 +1,6 @@
 (* FUNCIONES RECURSIVAS *)
 (* Una función recursiva (por inducción) es una definición en la cual se hace llamado a su mismo nombre 
-    (se tiene la propiedad para un caso baso, un n, y un n+1)*)
+    (se tiene la propiedad para un caso base, un n, y un n+1)*)
 (* Pueden asociarse con las ecuaciones de recurrencias de la matematica discreta *)
 
 (* El ejemplo mas comun, el factorial de un numero *)
@@ -14,7 +14,7 @@ fact 5;;
 fact 6;;
 
 (* Excepciones de Tipo *)
-(* utilizando fail with que imprime un mensaje si ocurre una evaluación de tipo inesperado *)
+(* utilizando failwith que imprime un mensaje si ocurre una evaluación de tipo inesperado *)
 let fact n = if n = 0 then 1 else if n > 0 then n*fact(n-1) else failwith "factorial no recibe negativos";;
 
 (* EJERCICIOS *)
