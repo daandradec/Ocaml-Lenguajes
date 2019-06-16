@@ -1,8 +1,12 @@
 (* FUNCIONES *)
 (* Las Funciones son una relación u procedimiento que asocia un conjunto de entrada con un conjunto de salida. f(x) = y *)
 
-(* let id p1 p2 ... pn = exp *) (* el espacio entre parametros o argumentos es muy importante en una funcion (estructura de la gramatica)*)
-(* let id = function p1 -> exp;;*)
+(* su estructura es *)
+(* let id parametro = expresion *)
+(* let id = function parametro -> expresion *)
+(* let id p1 p2 ... pn = exp *)
+(* let id = function p1 -> function p2 -> function pn -> exp;;*)
+(* el espacio entre parametros o argumentos es muy importante en una funcion (estructura de la gramatica)*)
 
 let f x = 2*x+3;;
 let f (x) = 2*x+3;;
