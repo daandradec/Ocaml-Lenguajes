@@ -757,6 +757,27 @@ pertenece 11 arbol_binario;;
 
 ## ARREGLOS
 
+Grupos de datos asociados a un solo identificador
+
+Su estructura es : ``` [| elem1 ; elem2 ; elem3 ; elemN |] ```
+
+Veamos ahora el archivo 12_arreglos.ml
+
+```
+(* ARRAYS *)
+
+let v = [| 6 ; 4 ; 8|];;
+v. (0);;
+(* - : int = 6 *)
+v. (1);;
+(* - : int = 4 *)
+v. (2);;
+(* - : int = 8 *)
+v. (1) <- 10;; (* asignacion *)
+v;;
+(* - : int array = [|6; 10; 8|] *)
+```
+
 # Ejemplos Avanzados
 
 Puedes pasar a ver el archivo 11_ejemplos_avanzados.ml
