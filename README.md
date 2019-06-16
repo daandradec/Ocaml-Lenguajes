@@ -87,11 +87,7 @@ Los tipos de datos son nombres que engloban algun tipo de conjunto primitivo (va
 
 Los principales tipos de datos en Ocaml son :
 
-**enteros**
-**flotantes**
-**valores de verdad**
-**caracteres**
-**cadenas de caracteres**
+**enteros** | **flotantes** | **valores de verdad** | **caracteres** | **cadenas de caracteres**
 
 # Particularidades del lenguaje respecto al paradigma funcional
 
