@@ -66,7 +66,7 @@ Ahora sí para empezar a conocer el lenguaje abarcaremos estas secciones
 - definiciones locales
 - condicionales
 
-### hello world
+## HELLO WORLD
 
 Abre la consola de ocaml y ejecuta
 
@@ -74,12 +74,24 @@ Abre la consola de ocaml y ejecuta
 
 Con esta instrucción mostramos en la salida estandar la cadena hello world
 
-#### lista de funciones nativas para impresión
+### lista de funciones nativas para impresión
 
 - print_int ENTERO
 - print_float FLOTANTE
 - print_newline ()
 - print_string CADENA
+
+## TIPOS DE DATOS 
+
+Los tipos de datos son nombres que engloban algun tipo de conjunto primitivo (valores de verdad, numeros, texto)
+
+Los principales tipos de datos en Ocaml son :
+
+**enteros**
+**flotantes**
+**valores de verdad**
+**caracteres**
+**cadenas de caracteres**
 
 # Particularidades del lenguaje respecto al paradigma funcional
 
