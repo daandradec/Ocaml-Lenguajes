@@ -11,6 +11,10 @@ Ocaml es un lenguaje que cumple con 4 criterios de los buenos lenguajes: (portab
 
 Ademas su logo ú imagen es un lindo camello.
 
+![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/camello.png)
+
+![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/colour-logo.png)
+
 # PRIMEROS PASOS 
 
 
