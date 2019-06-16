@@ -531,8 +531,8 @@ let fact n = if n = 0 then 1 else if n > 0 then n*fact(n-1) else failwith "facto
 (* EJERCICIOS *)
 (* Definir la funcion suma entera (sumatoria desde i variando de 0 a n de i) y la suma entera de n numeros al cudrado sin recibir negativos*)
 (* SOLUCION *)
-let rec suma_entera n = if n = 0 then 0 else if n > 0 then n + suma_entera (n-1) else failwith "Sumatoria no definida en negativos";;
-let rec suma_entera_cuadrada n = if n = 0 then 0 else if n > 0 then (n*n) + suma_entera_cuadrada (n-1) else failwith "Sumatoria no definida en negativos";;
+let rec suma_entera n = (* CODIGO *);;
+let rec suma_entera_cuadrada n = (* CODIGO *);;
 #trace suma_entera_cuadrada;;
 
 
@@ -553,13 +553,11 @@ let es_vocal = function 'a' | 'e' | 'i' | 'o' | 'u' -> true
 (* EJERCICIOS *)
 (* Escribir factorial por casos, y la suma de los n numeros enteros por casos con mensaje de error en negativos y procesando negativos*)
 (* SOLUCION *)
-let rec factorial = function 0 -> 1 | n -> n* factorial (n-1);;
-let rec suma_entera_2 = function 0 -> 0
-                                | n when n > 0 -> n + suma_entera_2 (n-1)
-                                | _ -> failwith "Sumatoria no definida en negativos";;
-let rec suma_entera_3 = function 0 -> 0
-                                | n when n > 0 -> n + suma_entera_3 (n-1)
-                                | n -> -1 * suma_entera_3 (-n);;
+let rec factorial = (* CODIGO *);;
+let rec suma_entera_2 = (* CODIGO *)
+let rec suma_entera_3 = (* CODIGO *)
+
+
 
 (* condicionales en casos con when *)
 let rec fact = function 0 -> 1
@@ -573,6 +571,7 @@ let rec fact = function 0 -> 1
 let seracruce = function x when x mod 2 = 0 -> x / 2
                         | x -> 3*x+1;;
 let rec conj = function 1 -> true | n -> conj (seracruce n);;
+
 
 ```
 
