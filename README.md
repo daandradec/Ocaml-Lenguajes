@@ -777,6 +777,11 @@ v. (1) <- 10;; (* asignacion *)
 v;;
 (* - : int array = [|6; 10; 8|] *)
 ```
+## Felicidades
+
+Felicidades por llegar hasta aquí, ahora ya deberias dominar Ocaml en un nivel medio alto. 
+
+Gracias por su lectura.
 
 # Ejemplos Avanzados
 
