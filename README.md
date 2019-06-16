@@ -576,6 +576,16 @@ let rec conj = function 1 -> true | n -> conj (seracruce n);;
 
 ```
 
+Con el ultimo Ejemplo vemos la conjetura se seracruce que para f(x)
+
+![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/conjetura.PNG)
+
+Afirma que la sucesion definida por 
+
+![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/conjetura2.PNG)
+
+Llegara siempre a 1 en cualquier momento
+
 ## LISTAS
 
 Una sucesion de valores del mismo tipo y cualquier tamaño
