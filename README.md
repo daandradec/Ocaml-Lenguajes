@@ -89,6 +89,14 @@ Los principales tipos de datos en Ocaml son :
 
 **enteros** | **flotantes** | **valores de verdad** | **caracteres** | **cadenas de caracteres**
 
+### Sus operadores
+
+![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/simbolos.PNG)
+
+### Sus palabras reservadas
+
+![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/reservadas.PNG)
+
 Veamos el primer contenido archivo 02_tipos_datos.ml
 
 ```
@@ -155,6 +163,10 @@ false || (not ((1+3)=(3*1-1)));;
 
 El tipado de ocaml es fuerte, por tanto los operadores estaran definidos para ciertos tipos de datos y no haran casting automatico.
 
+### Restricciones de tipo
+
+![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/tipos_datos.PNG)
+
 ## VARIABLES
 
 EL concepto de variables es el de asociar un nombre a un valor con un identificador.
@@ -218,6 +230,7 @@ let u = 10;;
 let v = u*3;;
 (* val v : int = 30 *)
 ```
+
 
 
 # Particularidades del lenguaje respecto al paradigma funcional
