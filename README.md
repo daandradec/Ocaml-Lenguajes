@@ -95,6 +95,8 @@ Veamos el primer contenido archivo 02_tipos_datos.ml
 
 (* ENTEROS *)
 2;;
+3;;
+4;;
 (* OPERADORES ENTEROS *)
 5+4;;
 3-2;;
