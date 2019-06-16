@@ -9,7 +9,7 @@ Ocaml es un lenguaje que cumple con 4 criterios de los buenos lenguajes: (portab
 - expresivo : capacidad de expresar las mismas cosas con las mismas palabras.
 - pedagogico : capacidad de explorar facilmente todos los conceptos basicos de la programación.
 
-Ademas su logo ú imagen es un camello.
+Ademas su logo ú imagen es un lindo camello.
 
 # PRIMEROS PASOS 
 
