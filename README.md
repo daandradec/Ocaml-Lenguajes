@@ -66,6 +66,21 @@ Ahora sí para empezar a conocer el lenguaje abarcaremos estas secciones
 - definiciones locales
 - condicionales
 
+### hello world
+
+Abre la consola de ocaml y ejecuta
+
+``` print_string "hello world";; ```
+
+Con esta instrucción mostramos en la salida estandar la cadena hello world
+
+#### lista de funciones nativas para impresión
+
+- print_int ENTERO
+- print_float FLOTANTE
+- print_newline ()
+- print_string CADENA
+
 # Particularidades del lenguaje respecto al paradigma funcional
 
 Ahora vayamos un poco mas profundo en el lenguaje aprendiendo estos temas que son comunes entre lenguajes de programación pero que en ocaml se manejan de manera un poco distinta. 
