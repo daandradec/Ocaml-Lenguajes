@@ -507,6 +507,9 @@ let f = function x -> x+1 in (identidad f) 2;;
 (* FUNCION TIPADO MANUAL *)
 let inc_int (x: int) : int = x + 1 ;;
 (* val inc_int : int -> int = <fun> *)
+
+(* EJERCICIO *)
+(* Escribir una función que calcule a^n en el conjunto de los enteros a los enteros *)
 ```
 
 ## FUNCIONES RECURSIVAS
