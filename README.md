@@ -594,7 +594,7 @@ let seracruce = function x when x mod 2 = 0 -> x / 2
                         | x -> 3*x+1;;
 let rec conj = function 1 -> true | n -> conj (seracruce n);;
 
-#trace conk;;
+#trace conj;;
 conj 5;
 
 ```
