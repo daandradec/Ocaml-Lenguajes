@@ -487,6 +487,10 @@ let compuesta f g = function x -> f (g x);;
 (* g : 'c -> 'a *)
 (* x: 'c *)
 
+let f x = x+1;;
+let g x = x*x;;
+compuesta f g 4;;
+
 (* Funciones en expresiones *)
 
 let x = 1+2 in ((function y -> y + x) x);;
