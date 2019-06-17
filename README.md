@@ -47,6 +47,21 @@ Primero vamos a la sección de windows y buscamos el link que dice (instalación
 
 una vez allí descargamos la versión de 32 o 64 bits, ejecutamos el instalador, damos siguiente a todas las ventanas hasta finalizar con exito. Con esto ya debemos tener ocaml instalado y podremos ejecutar el comando ocaml en la consola de windows.
 
+# Compilador Estandar y Compilador Interactivo.
+
+El Compilador estandar: Compilara archivos de texto, por ejemplo, como cualquier compilador y ejecutara dichas instrucciones.
+
+Comando en consola:
+
+$Ocaml <NOMBREDEARCHIVO.ml>
+
+
+Por otro lado si ejecutamos en consola:
+
+$Ocaml
+
+Ingresaremos al compilador interactivo de Ocaml el cual ejecutara las instrucciones que ingresemos, como si pertenecieran a un mismo archivo, y nos mostrara el resultado de cada ejecucion.
+
 # Editores Online
 
 Si no quieres instalar Ocaml en tu sistema puedes buscar editores online, como por ejemplo: 
