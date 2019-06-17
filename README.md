@@ -548,7 +548,7 @@ fact 6;;
 
 (* Excepciones de Tipo *)
 (* utilizando failwith que imprime un mensaje si ocurre una evaluación de tipo inesperado *)
-let fact n = if n = 0 then 1 else if n > 0 then n*fact(n-1) else failwith "factorial no recibe negativos";;
+let rec fact n = if n = 0 then 1 else if n > 0 then n*fact(n-1) else failwith "factorial no recibe negativos";;
 
 (* EJERCICIOS *)
 (* Definir la funcion suma entera (sumatoria desde i variando de 0 a n de i) y la suma entera de n numeros al cudrado sin recibir negativos*)
@@ -594,6 +594,8 @@ let seracruce = function x when x mod 2 = 0 -> x / 2
                         | x -> 3*x+1;;
 let rec conj = function 1 -> true | n -> conj (seracruce n);;
 
+#trace conk;;
+conj 5;
 
 ```
 
