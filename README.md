@@ -1,15 +1,15 @@
 # OCAML
 
 Sean bienvenidos a conocer el lenguaje Ocaml (lenguaje proveniente de caml pero con implementación en POO - año 1995).
-Ocaml es un lenguaje que cumple con 4 criterios de los buenos lenguajes: (portable, seguro, expresivo, pedagogico).
+Ocaml es un lenguaje que cumple con 4 criterios de los buenos lenguajes: (portable, seguro, expresivo, pedagógico).
 
 ### criterios
-- portable : lenguaje lo mas independiente de los detalles de la maquina.
-- seguro : programas robuztos con restricciones semanticas
-- expresivo : capacidad de expresar las mismas cosas con las mismas palabras.
-- pedagogico : capacidad de explorar facilmente todos los conceptos basicos de la programación.
+- portable: lenguaje lo más independiente de los detalles de la máquina.
+- seguro: programas robustos con restricciones semánticas
+- expresivo: capacidad de expresar las mismas cosas con las mismas palabras.
+- pedagógico: capacidad de explorar fácilmente todos los conceptos básicos de la programación.
 
-Ademas su logo es un lindo camello.
+Además, su logo es un lindo camello.
 
 ![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/camello.png)
 
@@ -21,11 +21,11 @@ Primero tratemos de tener el entorno para poder correr instrucciones del lenguaj
 
 ## Instalación
 
-Comencemos por ir a la pagina oficial en la sección de instalación 
+Comencemos por ir a la página oficial en la sección de instalación 
 
 [http://ocaml.org/docs/install.html](http://ocaml.org/docs/install.html)
 
-Una vez allí podemos ver la guia de instalación para varios sistemas operativos, pero aqui daremos la guia para Ubuntu y Windows
+Una vez allí podemos ver la guía de instalación para varios sistemas operativos, pero aquí daremos la guía para Ubuntu y Windows
 
 ## Ubuntu
 
@@ -35,19 +35,19 @@ Ejecutar el comando
 sudo apt install ocaml
 ```
 
-Con esto, ya deberiamos ser capaces de ejecutar en la terminal el comando : $ ocaml
+Con esto, ya deberíamos ser capaces de ejecutar en la terminal el comando: $ ocaml
 
 ## Windows
 
-Para windows sera necesario instalar un paquete que permite instalar ocaml con solo ejecutar un .exe.
+Para windows será necesario instalar un paquete que permite instalar ocaml con solo ejecutar un .exe.
 
-Primero vamos a la sección de windows y buscamos el link que dice (instalación con OCPWIN), lo que nos deberia enviara a este link
+Primero vamos a la sección de windows y buscamos el link que dice (instalación con OCPWIN), lo que nos debería enviara a este link
 
 [https://www.typerex.org/ocpwin.html](https://www.typerex.org/ocpwin.html)
 
-una vez allí descargamos la versión de 32 o 64 bits, ejecutamos el instalador, damos siguiente a todas las ventanas hasta finalizar con exito. Con esto ya debemos tener ocaml instalado y podremos ejecutar el comando ocaml en la consola de windows.
+una vez allí descargamos la versión de 32 o 64 bits, ejecutamos el instalador, damos siguiente a todas las ventanas hasta finalizar con éxito. Con esto ya debemos tener ocaml instalado y podremos ejecutar el comando ocaml en la consola de windows.
 
-# Compilador Estandar y Compilador Interactivo.
+# Compilador Estándar y Compilador Interactivo.
 
 El Compilador estandar: Compilara archivos de texto, por ejemplo, como cualquier compilador y ejecutara dichas instrucciones.
 
@@ -60,7 +60,7 @@ Por otro lado si ejecutamos en consola:
 
 $Ocaml
 
-Ingresaremos al compilador interactivo de Ocaml el cual ejecutara las instrucciones que ingresemos, como si pertenecieran a un mismo archivo, y nos mostrara el resultado de cada ejecucion.
+Ingresaremos al compilador interactivo de Ocaml el cual ejecutara las instrucciones que ingresemos, como si pertenecieran a un mismo archivo, y nos mostrara el resultado de cada ejecución.
 
 # Editores Online
 
@@ -87,7 +87,7 @@ Abre la consola de ocaml y ejecuta
 
 ``` print_string "hello world";; ```
 
-Con esta instrucción mostramos en la salida estandar la cadena hello world
+Con esta instrucción mostramos en la salida estándar la cadena hello world
 
 ### lista de funciones nativas para impresión
 
@@ -98,7 +98,7 @@ Con esta instrucción mostramos en la salida estandar la cadena hello world
 
 ## TIPOS DE DATOS Y OPERADORES
 
-Los tipos de datos son nombres que engloban algun tipo de conjunto primitivo (valores de verdad, numeros, texto)
+Los tipos de datos son nombres que engloban algún tipo de conjunto primitivo (valores de verdad, números, texto)
 
 Los principales tipos de datos en Ocaml son :
 
@@ -176,7 +176,7 @@ false || (not ((1+3)=(3*1-1)));;
 
 ```
 
-El tipado de ocaml es fuerte, por tanto los operadores estaran definidos para ciertos tipos de datos y no haran casting automatico.
+El tipado de ocaml es fuerte, por tanto los operadores estarán definidos para ciertos tipos de datos y no harán casting automático.
 
 ### Restricciones de tipo
 
@@ -194,8 +194,8 @@ Veamos ahora el archivo 03_variables.ml
 (* DEFINICIONES GLOBALES *)
 (* ASOCIAR UN NOMBRE A UN VALOR *)
 (* CARACTERISTICAS DE ESTOS IDENTIFICADORES *)
-(* Es un nombre de maximo 255 caracteres *)
-(* deben empezar por una minuscula *)
+(* Es un nombre de máximo 255 caracteres *)
+(* deben empezar por una minúscula *)
 (* no deben contener espacios *)
 
 let s = 1 + 2 + 3;; (* En matemtica, sea S la suma de 1 2 y 3*)
@@ -259,7 +259,7 @@ Veamos ahora el archivo 04_definiciones_locales.ml
 ```
 (* DEFINICIONES LOCALES *)
 (* Si queremos un identificador con un valor que solo exista en un contexto *)
-(* Por ejemplo si quisieramos calcular (3x4x5)x(3x4x5)+(3x4x5)x4*)
+(* Por ejemplo si quisiéramos calcular (3x4x5)x(3x4x5)+(3x4x5)x4*)
 
 let prod = 3*4*5 in prod*prod+prod*4;; (* con la palabra reservada in le decimos que asuma el valor de la exp1 en la exp de la derecha *)
 (* - : int = 3840 *)
@@ -344,7 +344,7 @@ if true then 4+1 else 4.0;;
 
 # Particularidades del lenguaje respecto al paradigma funcional
 
-Ahora vayamos un poco mas profundo en el lenguaje aprendiendo estos temas que son comunes entre lenguajes de programación pero que en ocaml se manejan de manera un poco distinta. 
+Ahora vayamos un poco más profundo en el lenguaje aprendiendo estos temas que son comunes entre lenguajes de programación pero que en ocaml se manejan de manera un poco distinta. 
 
 - funciones
 - funciones recursivas
@@ -465,7 +465,7 @@ f 1;;
 (* - : int = 3 *)
 let const = 6;;
 f 1;;
-(* ¿Que deberia de mostrar? - : int = 3  ó  - : int = 6 *)
+(* ¿Que debería de mostrar? - : int = 3  ó  - : int = 6 *)
 
 
 let f = function x -> x && (x < 10);;
@@ -566,7 +566,7 @@ let es_vocal = function 'a' | 'e' | 'i' | 'o' | 'u' -> true
                            | _ -> false ;;
 
 (* EJERCICIOS *)
-(* Escribir factorial por casos, y la suma de los n numeros enteros por casos con mensaje de error en negativos y procesando negativos*)
+(* Escribir factorial por casos, y la suma de los n números enteros por casos con mensaje de error en negativos y procesando negativos*)
 (* SOLUCION *)
 let rec factorial = (* CODIGO *);;
 let rec suma_entera_2 = (* CODIGO *)
@@ -594,7 +594,7 @@ Con el ultimo Ejemplo vemos la conjetura se seracruce que para f(x)
 
 ![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/conjetura.PNG)
 
-Afirma que la sucesion definida por 
+Afirma que la sucesión definida por 
 
 ![](https://github.com/daandradec/Ocaml-Lenguajes/blob/master/Imagenes/conjetura2.PNG)
 
@@ -602,7 +602,7 @@ Llegara siempre a 1 en cualquier momento
 
 ## LISTAS
 
-Una sucesion de valores del mismo tipo y cualquier tamaño
+Una sucesión de valores del mismo tipo y cualquier tamaño
 
 Su estructura es :
 
@@ -610,7 +610,7 @@ Su estructura es :
 
 donde la cabeza es un tipo de dato, y la cola es una lista
 
-tambien se pueden escribir como 
+también se pueden escribir como 
 
 ``` [ elem1 ; elem2 ; elem3 ; elemN ] ```
 
@@ -618,7 +618,7 @@ Veamos ahora el archivo 08_listas.ml
 
 ```
 (* ESTRUCTURAS LISTAS *)
-(* Una sucesion de valores del mismo tipo y cualquier tamaño *)
+(* Una sucesión de valores del mismo tipo y cualquier tamaño *)
 
 (* EL 1ER ELEMENTO ES LA CABEZA *) 
 (* LOS DEMAS ELEMENTOS SON LA COLA *)
@@ -689,7 +689,7 @@ let rec concat l1 l2 = match l1 with [] -> l2
 
 Son tipos compuestos que se forman como parejas bajo el concepto del producto cartesiano
 
-Su estructura es : ``` (constante, constante)  (identificador, identificador) ``` o sin parentesis ``` constante, constante   identificador, identificador ```
+Su estructura es : ``` (constante, constante)  (identificador, identificador) ``` o sin paréntesis ``` constante, constante   identificador, identificador ```
 
 Veamos ahora el archivo 09_tuplas.ml
 
@@ -721,7 +721,7 @@ let norma (x,y,z) = sqrt(x *. x *. x +. y *. y *. y +. z *. z *. z);;
 
 ## TIPOS
 
-En Ocaml podemos hacer definiciónes de nuevos tipos de dato, dando los posibles valores en la definición
+En Ocaml podemos hacer definiciones de nuevos tipos de dato, dando los posibles valores en la definición
 
 Su estructura es : ``` type identificador = Tipo1 | Tipo2 | Tipo3 | Tipo4 | TipoN ```
 
@@ -803,7 +803,7 @@ v;;
 ```
 ## Felicidades
 
-Felicidades por llegar hasta aquí, ahora ya deberias dominar Ocaml en un nivel medio alto. 
+Felicidades por llegar hasta aquí, ahora ya deberías dominar Ocaml en un nivel medio alto. 
 
 Gracias por su lectura.
 
