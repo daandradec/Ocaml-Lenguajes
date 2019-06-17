@@ -428,7 +428,7 @@ cuadrado cuadrado 2;;
 
 (* FUNCIONES DE VARIOS PARAMETROS *)
 
-(* ¿Como calular el area deu n triangulo de base b y altura a?, A = b*a/2 *)
+(* ¿Como calular el area de un triangulo de base b y altura a?, A = b*a/2 *)
 
 let area_triangulo = function a -> function b -> a *. b /. 2.;;
 let area_triangulo a b =  a *. b /. 2.;;
